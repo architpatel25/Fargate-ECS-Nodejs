@@ -42,13 +42,13 @@ jobs:
         uses: aws-actions/amazon-ecs-render-task-definition@v1
         with:
           task-definition: nodejs-app-task-definition.json 
-          container-name: Nodejs-app
+          container-name: farget-nodejs
           image: ${{ steps.build-image.outputs.image }}
 
       - name: Deploy Amazon ECS task definition
         uses: aws-actions/amazon-ecs-deploy-task-definition@v1
         with:
           task-definition: ${{ steps.task-def.outputs.task-definition }}
-          service: nodejs-app-service-1
-          cluster: Nodejs
-          wait-for-service-stability: true    
+          service: fargate-nodejs-app
+          cluster: fargate-nodejs-cluster
+          wait-for-service-stability: true

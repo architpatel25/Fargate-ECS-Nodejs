@@ -1,13 +1,13 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:ap-south-1:586367578102:task-definition/nodejs-app-task-definition:2",
+    "taskDefinitionArn": "arn:aws:ecs:ap-south-1:000251184253:task-definition/farget-nodejs:1",
     "containerDefinitions": [
         {
-            "name": "Nodejs-app",
-            "image": "586367578102.dkr.ecr.ap-south-1.amazonaws.com/nodejs",
+            "name": "farget-nodejs",
+            "image": "000251184253.dkr.ecr.ap-south-1.amazonaws.com/fargate_nodejs",
             "cpu": 0,
             "portMappings": [
                 {
-                    "name": "nodejs-app-3000-tcp",
+                    "name": "farget-nodejs-3000-tcp",
                     "containerPort": 3000,
                     "hostPort": 3000,
                     "protocol": "tcp",
@@ -33,8 +33,8 @@
         }
     ],
     "family": "nodejs-app-task-definition",
-    "taskRoleArn": "arn:aws:iam::586367578102:role/ECSTaskExecutionRole-nodejs",
-    "executionRoleArn": "arn:aws:iam::586367578102:role/ECSTaskExecutionRole-nodejs",
+    "taskRoleArn": "arn:aws:iam::000251184253:role/aws-service-role/ecs.amazonaws.com/AWSServiceRoleForECS",
+    "executionRoleArn": "arn:aws:iam::000251184253:role/aws-service-role/ecs.amazonaws.com/AWSServiceRoleForECS",
     "networkMode": "awsvpc",
     "revision": 2,
     "volumes": [],
@@ -83,6 +83,6 @@
         "operatingSystemFamily": "LINUX"
     },
     "registeredAt": "2023-12-29T08:52:44.354Z",
-    "registeredBy": "arn:aws:iam::586367578102:root",
+    "registeredBy": "arn:aws:iam::000251184253:root",
     "tags": []
 }

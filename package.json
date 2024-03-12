@@ -1,5 +1,5 @@
 {
-  "name": "sample-node.js-application",
+  "name": "Fargate-node.js-application",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -8,7 +8,7 @@
     "test": "mocha --recursive --exit"
   },
   "keywords": [],
-  "author": "",
+  "author": "Archit",
   "license": "ISC",
   "devDependencies": {
     "chai": "^4.3.10",
