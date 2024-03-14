@@ -50,5 +50,5 @@ jobs:
         with:
           task-definition: ${{ steps.task-def.outputs.task-definition }}
           service: ecs-nodejs/fargate-nodejs-app
-          cluster: fargate-nodejs-cluster
+          cluster: ecs-nodejs
           wait-for-service-stability: true
