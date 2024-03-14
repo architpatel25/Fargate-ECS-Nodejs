@@ -12,6 +12,13 @@
                     "hostPort": 3000,
                     "protocol": "tcp",
                     "appProtocol": "http"
+                },
+                {
+                  "name": "farget-nodejs-80-tcp",
+                  "containerPort": 80,
+                  "hostPort": 80,
+                  "protocol": "tcp",
+                  "appProtocol": "http"
                 }
             ],
             "essential": true,

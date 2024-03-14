@@ -52,3 +52,5 @@ jobs:
           service: ecs-nodejs/fargate-nodejs-app
           cluster: ecs-nodejs
           wait-for-service-stability: true
+          container-name: farget-nodejs  # Ensure this matches the container name in your task definition
+          container-port: 3000  # Ensure this matches the container port defined in your task definition
