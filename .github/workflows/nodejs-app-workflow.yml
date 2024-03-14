@@ -49,6 +49,6 @@ jobs:
         uses: aws-actions/amazon-ecs-deploy-task-definition@v1
         with:
           task-definition: ${{ steps.task-def.outputs.task-definition }}
-          service: fargate-nodejs-app
+          service: ecs-nodejs/fargate-nodejs-app
           cluster: fargate-nodejs-cluster
           wait-for-service-stability: true
