@@ -19,22 +19,12 @@
             "environmentFiles": [],
             "mountPoints": [],
             "volumesFrom": [],
-            "ulimits": [],
-            "logConfiguration": {
-                "logDriver": "awslogs",
-                "options": {
-                    "awslogs-create-group": "true",
-                    "awslogs-group": "/ecs/nodejs-app-task-definition",
-                    "awslogs-region": "ap-south-1",
-                    "awslogs-stream-prefix": "ecs"
-                },
-                "secretOptions": []
-            }
+            "ulimits": []
         }
     ],
     "family": "nodejs-app-task-definition",
-    "taskRoleArn": "arn:aws:iam::000251184253:role/aws-service-role/ecs.amazonaws.com/AWSServiceRoleForECS",
-    "executionRoleArn": "arn:aws:iam::000251184253:role/aws-service-role/ecs.amazonaws.com/AWSServiceRoleForECS",
+    "taskRoleArn": "arn:aws:iam::000251184253:role/farget-nodejs",
+    "executionRoleArn": "arn:aws:iam::000251184253:role/farget-nodejs",
     "networkMode": "awsvpc",
     "revision": 2,
     "volumes": [],
